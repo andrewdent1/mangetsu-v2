@@ -7,18 +7,40 @@
   <title>Home | Mangetsu</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="head-foot.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <nav>
-      <div>
-        <img src="/Images/mangetsu.png" alt="">
+      <div class="header-logo">
+        <a href="index.html"><img src="/Images/mangetsu.png" alt="" class="logo"></a>
       </div>
-      <div>
-        <a href="">Home</a>
-        <a href="">Menu</a>
-        <a href="">Contact</a>
+      <div class="header-items">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()"><a href="#" class="close-btn"><svg xmlns="http://www.w3.org/2000/svg"
+            height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+            <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg></a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <ul>
+          <li class="hideOnMobile"><a href="">Home</a></li>
+          <li class="hideOnMobile"><a href="">Menu</a></li>
+          <li class="hideOnMobile"><a href="">Contact</a></li>
+          <li class="menu-button" onclick="showSidebar()"><a href="#" class="close-btn"><svg
+            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg></a></li>
+        </ul>
+      </div>
+      <div class="header-order">
+        <button>Order Online</button>
       </div>
     </nav>
   </header>
