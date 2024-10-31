@@ -3,3 +3,66 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.slideshow-container {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease; /* Smooth fading transition */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 1; /* Show the active slide */
+}
+
+.intro-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    font-family: "Noto Sans", serif;
+}
+
+.intro-bottom h1 {
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.intro-bottom h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.intro-buttons {
+    display: flex;
+    gap: 10vw;
+}
+
+.intro-buttons button {
+    padding: 10px 20px;
+    background-color: #e4ba4e;
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-family: "Noto Sans", serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
