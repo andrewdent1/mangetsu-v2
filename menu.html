@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangetsu Korean - Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="head-foot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  </head>
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="header-logo">
+            <a href="index.html"><img src="/Images/mangetsu.png" alt="" class="logo"></a>
+          </div>
+          <div class="header-items">
+            <ul class="sidebar">
+              <li onclick="hideSidebar()"><a href="#" class="close-btn"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                <path
+                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+              </svg></a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            <ul>
+              <li class="hideOnMobile"><a href="index.html">Home</a></li>
+              <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
+              <li class="hideOnMobile"><a href="">Contact</a></li>
+              <li class="menu-button" onclick="showSidebar()"><a href="#" class="close-btn"><svg
+                xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+              </svg></a></li>
+            </ul>
+          </div>
+          <div class="header-order">
+            <button>Order Online</button>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <!-- Appetizers Section -->
+        <section class="menu-category">
+            <h2>Appetizers</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Kimchee Pajeon</span>
+                        <span class="item-price">$11.95</span>
+                    </div>
+                    <p class="item-description">Korean pancake with kimchee and pork.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Kimbap</span>
+                        <span class="item-price">$10.95</span>
+                    </div>
+                    <p class="item-description">Traditional Korean sushi roll.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Summer Roll (2)</span>
+                        <span class="item-price">$5.95</span>
+                    </div>
+                    <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Tofu Roll (2)</span>
+                        <span class="item-price">$4.95</span>
+                    </div>
+                    <p class="item-description">Tofu, fresh salad, and basil wrapped with rice paper.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Seafood Pajeon</span>
+                        <span class="item-price">$12.95</span>
+                    </div>
+                    <p class="item-description">Korean pancake with mixed seafood.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Tteok-bokki</span>
+                        <span class="item-price">$11.95</span>
+                    </div>
+                    <p class="item-description">Hot and spicy. Rice cake, fish cake, and hard-boiled egg slow-cooked in sweet hot pepper paste.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Pan Fried Tofu (5)</span>
+                        <span class="item-price">$4.95</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Half Moon Dumpling (5 Pork)</span>
+                        <span class="item-price">$6.95</span>
+                    </div>
+                    <p class="item-description">Choice of fried or steamed.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Soups Section -->
+        <section class="menu-category">
+            <h2>Soups</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Miso Soup</span>
+                        <span class="item-price">$2.95</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Tom Kha Gai</span>
+                        <span class="item-price">$5.95+</span>
+                    </div>
+                    <p class="item-description">Hot and spicy. Lemongrass, mushrooms, tomatoes, lime juice, coconut milk, and chili paste with chicken.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Tom Kha Goong</span>
+                        <span class="item-price">$6.95+</span>
+                    </div>
+                    <p class="item-description">Hot and spicy. Lemongrass, mushrooms, tomatoes, lime juice, coconut milk, and chili paste with shrimp.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Tom Yum Goong</span>
+                        <span class="item-price">$5.95+</span>
+                    </div>
+                    <p class="item-description">Hot and spicy. Lemongrass, mushrooms, tomatoes, lime juice, and chili paste with shrimp.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Mixed Vegetable Soup</span>
+                        <span class="item-price">$4.95+</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Wonton Soup</span>
+                        <span class="item-price">$4.95+</span>
+                    </div>
+                    <p class="item-description">Wonton and vegetables.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Tom Yum Talay</span>
+                        <span class="item-price">$6.95+</span>
+                    </div>
+                    <p class="item-description">Hot and spicy. Lemongrass, mushrooms, tomatoes, lime juice, and chili paste with seafood.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Tom Kha Talay</span>
+                        <span class="item-price">$7.95+</span>
+                    </div>
+                    <p class="item-description">Hot and spicy. Lemongrass, mushrooms, tomatoes, lime juice, coconut milk, and chili paste with seafood.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Fish Miso Soup</span>
+                        <span class="item-price">$5.95</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Tom Yum Gai</span>
+                        <span class="item-price">$4.95+</span>
+                    </div>
+                    <p class="item-description">Hot and spicy. Lemongrass, mushrooms, tomatoes, lime juice, and chili paste with chicken.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="menu-category">
+            <h2>Korean Favorites</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Bibimbap</span>
+                        <span class="item-price">$12.95</span>
+                    </div>
+                    <p class="item-description">A bowl of rice topped with assorted vegetables, an egg, and your choice of protein. Served with gochujang sauce on the side.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Dolsot Bibimbap</span>
+                        <span class="item-price">$14.95</span>
+                    </div>
+                    <p class="item-description">Bibimbap served in a hot stone bowl for a crispy rice texture.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Bulgogi</span>
+                        <span class="item-price">$14.95</span>
+                    </div>
+                    <p class="item-description">Marinated beef stir-fried with vegetables, served with rice.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Spicy Pork Bulgogi</span>
+                        <span class="item-price">$13.95</span>
+                    </div>
+                    <p class="item-description">Marinated spicy pork stir-fried with vegetables, served with rice.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Chicken Bulgogi</span>
+                        <span class="item-price">$13.95</span>
+                    </div>
+                    <p class="item-description">Marinated chicken stir-fried with vegetables, served with rice.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Korean BBQ Section -->
+        <section class="menu-category">
+            <h2>Korean BBQ</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Kalbi</span>
+                        <span class="item-price">$21.95</span>
+                    </div>
+                    <p class="item-description">Korean BBQ short ribs marinated in a special sauce.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Samgyupsal</span>
+                        <span class="item-price">$15.95</span>
+                    </div>
+                    <p class="item-description">Pork belly served with lettuce wraps, garlic, and ssamjang sauce.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Noodles Section -->
+        <section class="menu-category">
+            <h2>Noodles</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Japchae</span>
+                        <span class="item-price">$12.95</span>
+                    </div>
+                    <p class="item-description">Stir-fried glass noodles with vegetables and your choice of protein.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Yakisoba</span>
+                        <span class="item-price">$12.95</span>
+                    </div>
+                    <p class="item-description">Japanese stir-fried noodles with vegetables and your choice of protein.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Udon</span>
+                        <span class="item-price">$11.95</span>
+                    </div>
+                    <p class="item-description">Thick Japanese noodles in a light broth with vegetables.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Desserts Section -->
+        <section class="menu-category">
+            <h2>Desserts</h2>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Mochi Ice Cream</span>
+                        <span class="item-price">$4.95</span>
+                    </div>
+                    <p class="item-description">Sweet rice dough filled with ice cream. Flavors include green tea, red bean, mango, and strawberry.</p>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <span class="item-name">Fried Ice Cream</span>
+                        <span class="item-price">$6.95</span>
+                    </div>
+                    <p class="item-description">Vanilla ice cream with a crispy fried coating.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
