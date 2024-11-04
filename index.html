@@ -7,6 +7,11 @@
   <title>Home | Mangetsu</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="head-foot.css">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -29,11 +34,13 @@
               </svg></a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
+          <li><a href="">Gallery</a></li>
           <li><a href="">Contact</a></li>
         </ul>
         <ul>
           <li class="hideOnMobile"><a href="index.html">Home</a></li>
           <li class="hideOnMobile"><a href="menu.html">Menu</a></li>
+          <li class="hideOnMobile"><a href="">Gallery</a></li>
           <li class="hideOnMobile"><a href="">Contact</a></li>
           <li class="menu-button" onclick="showSidebar()"><a href="#" class="close-btn"><svg
                 xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
@@ -63,7 +70,7 @@
 
   <section class="intro-bottom">
     <h1>Mangetsu</h1>
-    <h2>Korean BBQ, Sushi and Thai</h2>
+    <h2>Melbourne's favorite Korean BBQ, Sushi and Thai</h2>
     <div class="intro-buttons">
       <button>Order Online</button>
     </div>
@@ -84,8 +91,142 @@
     </div>
   </section>
 
+  <section class="popular-items-section">
+    <h1>Popular Menu Items</h1>
+    <div class="popular-items-list">
+        <ul class="popular-items-column">
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+        </ul>
+        <ul class="popular-items-column">
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+          <li>
+            <div class="menu-item">
+                <span class="item-name">Summer Roll (2)</span>
+                <span class="item-price">$5.95</span>
+            </div>
+            <p class="item-description">Shrimp, fresh salad, and basil wrapped with rice paper.</p>
+          </li>
+        </ul>
+    </div>
+    <a href="/menu.html" class="full-menu-button">View Full Menu</a>
+</section>
+
+<section>
+  <div class="carousel-wrap">
+    <div class="owl-carousel">
+      <div class="item"><img src="/Images/image1.jpg"></div>
+      <div class="item"><img src="/Images/image2.jpg"></div>
+      <div class="item"><img src="/Images/image3.jpg"></div>
+      <div class="item"><img src="/Images/image1.jpg"></div>
+      <div class="item"><img src="/Images/image2.jpg"></div>
+      <div class="item"><img src="/Images/image3.jpg"></div>
+      <div class="item"><img src="/Images/image1.jpg"></div>
+      <div class="item"><img src="/Images/image2.jpg"></div>
+      <div class="item"><img src="/Images/image3.jpg"></div>
+      <div class="item"><img src="/Images/image1.jpg"></div>
+      <div class="item"><img src="/Images/image2.jpg"></div>
+      <div class="item"><img src="/Images/image3.jpg"></div>
+    </div>
+  </div>
+  <div class="center-button">
+    <a href="/full-gallery" class="view-gallery-button">View Full Gallery</a>
+</div>
+</section>
+
+<section class="contact-section">
+  <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> info@example.com</p>
+      <p><strong>Address:</strong> 1234 Street Name, City, State, Zip</p>
+      <p><strong>Business Hours:</strong> Mon-Fri, 9 AM - 5 PM</p>
+  </div>
+
+  <div class="contact-form">
+      <h3>Contact Form</h3>
+      <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+      </form>
+      <p id="formMessage" class="form-message"></p>
+  </div>
+</section>
+
 
   <script src="script.js"></script>
+  <script src="gallery.js"></script>
 
 </body>
 

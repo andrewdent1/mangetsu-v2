@@ -59,16 +59,15 @@ body {
 .intro-buttons button {
     padding: 10px 20px;
     background-color: #e4ba4e;
-    border: 1px solid black;
     color: black;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    font-family: "Noto Sans", serif;
     font-weight: 500;
     font-size: 1.1rem;
-    scale: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
 }
 
 .intro-buttons button:hover {
@@ -79,7 +78,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 75vh;
+    height: 60vh;
     padding: 20px;
     background-color: rgba(255, 231, 166, 0.359);
     /* Replace with your image URL */
@@ -96,7 +95,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 40%;
-    height: 50%;
+    height: 60%;
     /* Ensure full height of the section */
     padding: 20px;
     background-color: #ffffff;
@@ -113,4 +112,203 @@ body {
 .info-box p {
     margin: 5px 0;
     font-size: 1.25rem;
+}
+
+.popular-items-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 100px;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Style for the header */
+.popular-items-section h1 {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* Style the list container */
+.popular-items-list {
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Style each column */
+.popular-items-column {
+    flex: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popular-items-column li {
+    background-color: #ffffff;
+    padding: 15px 15px 5px 15px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Style for individual menu items */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-name {
+    font-weight: bold;
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #ff6347;
+}
+
+/* Style for description */
+.item-description {
+    margin: 5px 0 15px;
+    color: #666;
+    font-size: 0.9em;
+    padding-bottom: 10px;
+}
+
+/* Style the button */
+.full-menu-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+}
+
+.full-menu-button:hover {
+    background-color: #e5533d;
+}
+
+/* Centering container for the button */
+.center-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+/* Button styling */
+.view-gallery-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: -2.5%;
+    margin-bottom: 75px;
+}
+
+.view-gallery-button:hover {
+    background-color: #e5533d;
+}
+
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.contact-info, .contact-form {
+    flex: 1 1 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    padding: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for contact information */
+.contact-info h2, .contact-form h3 {
+    color: #333;
+    font-size: 1.75em;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 1em;
+}
+
+/* Style for the form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e5533d;
+}
+
+/* Message after form submission */
+.form-message {
+    color: green;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .contact-info, .contact-form {
+        flex: 1 1 100%;
+    }
 }

@@ -45,3 +45,31 @@ function showSlides() {
     // Set timeout to change slide every 3 seconds
     setTimeout(showSlides, 3000);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Simple form validation
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        if (name && email && subject && message) {
+            // Display success message
+            formMessage.textContent = "Thank you for your message! We will get back to you shortly.";
+            formMessage.style.color = "green";
+
+            // Optionally, clear form fields after submission
+            contactForm.reset();
+        } else {
+            // Display error message
+            formMessage.textContent = "Please fill in all fields.";
+            formMessage.style.color = "red";
+        }
+    });
+});
