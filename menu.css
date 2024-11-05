@@ -1,58 +1,74 @@
 body {
-    font-family: "Sawarabi Mincho", serif;
-    background-color: #f8f8f8;
-}
-
-h1 {
+    font-family: Arial, sans-serif;
     margin: 0;
-    font-size: 2rem;
-}
-
-main {
-    padding: 2rem;
-}
-
-.menu-category {
-    margin-bottom: 2rem;
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-ul {
-    list-style-type: none;
     padding: 0;
 }
 
-li {
-    background-color: #fff;
-    padding: 1rem;
-    margin-bottom: 1rem;
+.menu {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.menu-categories button {
+    flex: 1 1 30%;
+    /* Allows for two rows */
+    padding: 10px;
+    font-size: 1em;
+    margin: 5px 0;
+    border: none;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-categories button:hover {
+    background-color: #555;
+}
+
+.menu-items {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
 .menu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 220px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+    /* Hidden by default */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.item-name {
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.item-price {
-    font-weight: bold;
+.menu-item h3 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
     color: #333;
 }
 
-.item-description {
-    margin-top: 0.5rem;
-    color: #666;
+.menu-item p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
 }

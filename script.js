@@ -19,7 +19,7 @@ function hideSidebar() {
     sidebar.style.display = 'none'
 }
 
-document.querySelector('.close-btn').addEventListener('click', function(event) {
+document.querySelector('.close-btn').addEventListener('click', function (event) {
     event.preventDefault(); // Prevent the default action
     // Code to close the sidebar
 });
@@ -46,11 +46,11 @@ function showSlides() {
     setTimeout(showSlides, 3000);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.getElementById("contactForm");
     const formMessage = document.getElementById("formMessage");
 
-    contactForm.addEventListener("submit", function(event) {
+    contactForm.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
 
         // Simple form validation
@@ -73,3 +73,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Function to hide all menu items
+function hideAllMenuItems() {
+    const items = document.querySelectorAll(".menu-item");
+    items.forEach(item => item.style.display = "none");
+}
+
+// Function to filter menu items by category
+function filterMenu(category) {
+    // Hide all menu items first
+    hideAllMenuItems();
+
+    // Show only the items that match the selected category
+    const selectedItems = document.querySelectorAll(`.${category}`);
+    selectedItems.forEach(item => item.style.display = "block");
+}
+
+// Run hideAllMenuItems on page load to ensure all items are hidden initially
+window.onload = hideAllMenuItems;
